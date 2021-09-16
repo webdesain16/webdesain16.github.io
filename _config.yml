@@ -132,7 +132,7 @@ yat:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "auto"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -178,7 +178,7 @@ defaults:
 # excerpt_size: 350
 
 # Pagination setting
-# paginate: 5
+paginate: 5
 
 # Disqus comments
 # disqus:
@@ -193,7 +193,7 @@ defaults:
 #   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
 # Build settings
-# highlighter: none
+highlighter: none
 markdown: kramdown
 kmarkdown:
   input: GFM
