@@ -105,4 +105,3 @@ int main(){
 
 #### Challenge 
 dapatkah kalian mengerjakan soal ini dalam $$O(N \log N)$$?
----
