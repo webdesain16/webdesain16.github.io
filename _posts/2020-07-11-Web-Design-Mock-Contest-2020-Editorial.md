@@ -3,11 +3,12 @@ layout: post
 title: "WEB DESIGN MOCK CONTEST 2020 EDITORIAL"
 categories : Programming 
 tags: ["wd-contest","programming"]
+katex: yes
+published: yes
 ---
 # WEB DESIGN MOCK CONTEST 2020 EDITORIAL
 
 ### Penulis Soal
-
 
 | Judul Soal                  | Author | Editorialis    |
 | --------------------------- | ------ | -------------- |
@@ -199,7 +200,7 @@ Perhatikan baris pertama dari petak tersebut. Jika kita ingin pergi ke sembarang
 
 Perhatikan bahwa untuk setiap petak ($$x,y$$), ada dua jalan untuk menujunya, yaitu dari petak kirinya ($$x,y-1$$) atau dari petak atasnya ($$x-1,y$$). Karena hanya bisa bergerak ke kanan atau bawah, maka dari petak ($$x,y-1$$) kita tidak bisa bergerak ke petak ($$x-1,y$$) begitu pula sebaliknya sehingga kedua kasus tersebut saling lepas.
 
-Misalkan array dua dimensi $$path[x][y]$$ adalah array yang menampung banyaknya cara menuju petak ($x,y$) jika awalnya kita berada pada petak ($$1,1$$). Maka, secara matematis penjelasan pada paragraph dapat ditulis menjadi:
+Misalkan array dua dimensi $$path[x][y]$$ adalah array yang menampung banyaknya cara menuju petak ($$x,y$$) jika awalnya kita berada pada petak ($$1,1$$). Maka, secara matematis penjelasan pada paragraph dapat ditulis menjadi:
 $$path[x][y] = path[x][y-1] + path[x-1][y]$$
 
 Berikut adalah ilustrasi dari rumus tersebut:
@@ -288,7 +289,7 @@ Perhatikan bahwa untuk $$n = 4$$, jumlah karakter `#` pada baris pertama $$3$$, 
 | 3     | 1          | 5          |
 | 4     | 0          | 7          |
 
-Ini berarti, untuk mencetak mencetak n baris, dapat menggunakan `for` menaik dari $$1$$ sampai $$n$$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $$1$$ sampai $$n-i$$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $$1$$ sampai  $$(2*i)-1$$.
+Ini berarti, untuk mencetak mencetak n baris, dapat menggunakan `for` menaik dari $$1$$ sampai $$n$$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $$1$$ sampai $$n-i$$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $$1$$ sampai  $$(2 \times i)-1$$.
 
 Untuk pola yang selanjutnya, yaitu separuh terakhirnya.
 
@@ -359,9 +360,9 @@ int main(){
 
 Soal ini dapat diselesaikan dengan **melihat pola dan dengan bantuan *greedy***. Inti dari soal ini adalah meletakkan ratu sebanyak banyaknya pada papan berukuran $$n \times n$$. Misalkan kita meletakkan ratu pertama pada pojok kiri bawah dari papan tersebut, maka ratu selanjutnya diletakkan pada petak yang paling dekat dengan ratu pertama tetapi tidak sampai melanggar peraturan agar mendapat hasil paling maksimal dan membentuk pola.
 
-Setelah pola di observasi, terbentuklah pola yang dimaksud. Ada 3 basecase di problem ini, yaitu $$f(1) = 1$$; $$f(2) =1$$; $$f(3) = 2$$; $$f(4) = 4$$. Lalu pola nya berlaku mulai $$n ≥ 5$$. 
+Setelah pola di observasi, terbentuklah pola yang dimaksud. Ada 3 basecase di problem ini, yaitu $$f(1) = 1$$; $$f(2) =1$$; $$f(3) = 2$$; $$f(4) = 4$$. Lalu pola nya berlaku mulai $$n \le 5$$. 
 
-**Jika $$n$$ adalah bilangan ganjil**, maka **keluarannya adalah $n$**, **jika $$n$$ adalah bilangan genap**, maka **keluarannya adalah $$n-1$$**. Bisa dilihat di papan $$5 \times 5$$ berikut ini:
+**Jika $$n$$ adalah bilangan ganjil**, maka **keluarannya adalah $$n$$**, **jika $$n$$ adalah bilangan genap**, maka **keluarannya adalah $$n-1$$**. Bisa dilihat di papan $$5 \times 5$$ berikut ini:
 
 <div align="center">
     <img src="https://i.imgur.com/fcAxMu7.jpg"/>
