@@ -151,7 +151,7 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu** : $$O(log M)$$
+**Kompleksitas waktu** : $$O(\log M)$$
 
 Berikut adalah contoh kode dalam bahasa C++ menggunakan `for-loop`:
 
