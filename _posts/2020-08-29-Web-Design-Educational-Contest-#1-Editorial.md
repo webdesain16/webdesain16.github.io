@@ -6,8 +6,6 @@ tags: ["wd-contest","programming"]
 katex: yes
 published: yes
 ---
-# WEB DESIGN EDUCATIONAL CONTEST #1 EDITORIAL
-
 ### Penulis Soal
 
 | Judul Soal                  | Author | Editorialis    |
@@ -61,7 +59,9 @@ $$S_n = \frac{n}{2} \times [2a + (n-1)b]$$
 Masukkan angka yang diketahui, yaitu $$a$$ dan $$b$$. Maka : 
 
 $$S_n = \frac{n}{2} \times [2 \times 1 + (n-1)1]$$ 
+
 $$S_n = \frac{n}{2} \times [2 + n - 1]$$ 
+
 $$S_n = \frac{n}{2} \times [n + 1]$$
 
 Sehingga jawaban dari soal ini adalah
@@ -185,7 +185,7 @@ int main(){
 ## G. Penyimpangan Pancasila
 
 Klembu memiliki kata ``“panca”`` dengan setiap karakter dalam
-kata tersebut mempunyai indeks dari $1$ sampai $5$. Seperti pada tabel di bawah, karakter `p` mempunyai indeks $1$, `a` mempunyai indeks $2$, `n` mempunyai indeks $3$, `c` mempunyai indeks $4$, `a` mempunyai indeks $5$
+kata tersebut mempunyai indeks dari $$1$$ sampai $$5$$. Seperti pada tabel di bawah, karakter `p` mempunyai indeks $$1$$, `a` mempunyai indeks $$2$$, `n` mempunyai indeks $$3$$, `c` mempunyai indeks $$4$$, `a` mempunyai indeks $$5$$
 
 | 1 | 2 | 3 | 4 | 5 |
 | --|---| --| --| --|
