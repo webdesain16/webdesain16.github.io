@@ -94,11 +94,12 @@ Soal ini tidak beda jauh dengan soal jarak manhattan, hanya saja setiap jarak ya
 
 $$(|A-C| + |B-D|) \times N$$
 
-Dengan $$(|A-C| + |B-D|)$$ menyatakan nilai mutlak dari $$A - C$$ ditambah dengan nilai mutlak $$B – D$$ yang menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
+Dengan $$(|A-C|)$$ menyatakan nilai mutlak dari $$A - C$$ dan $$(|B-D|)$$ menyatakan nilai mutlak $$B – D$$. Jika keduanya ditambah, menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
 
 - Menggunakan fungsi `abs`
 Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
 Berikut adalah contoh program menggunakan bahasa C++:
+
 ```cpp
 #include <bits\stdc++.h>
 using namespace std;
@@ -112,6 +113,7 @@ int main(){
     cout << harga << endl;
 }
 ```
+
 - Menggunakan **percabangan** `if`
 Solusi lain adalah menggunakan percabangan. Salah cara untuk merubah bilangan negatif menjadi bilangan positif adalah mengalikan bilangan tersebut dengan `-1`.
 
