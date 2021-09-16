@@ -36,16 +36,16 @@ Kita memiliki dua kasus penting, yaitu :
 	</div>
 
    Pada kasus ini, nilai $$X$$ dan $$Y$$ berada diantara $$–N$$ dan $$N$$ eksklusif. Observasi gambar diatas, maka kita tahu bahwa urutan sumbu yang kita simpan atau outputkan adalah :
-       1) sumbu-$$x$$ negatif, sumbu-$$y$$ positif
-       2) sumbu-$$x$$ positif, sumbu-$$y$$ positif
-       3) sumbu-$$x$$ negatif, sumbu-$$y$$ negatif
-       4) sumbu-$$x$$ positif, sumbu-$$y$$ negatif
+    1. sumbu-$$x$$ negatif, sumbu-$$y$$ positif
+    2. sumbu-$$x$$ positif, sumbu-$$y$$ positif
+    3. sumbu-$$x$$ negatif, sumbu-$$y$$ negatif
+    4. sumbu-$$x$$ positif, sumbu-$$y$$ negatif
 
    Maka untuk kasus ini, cukup lakukan dua nested loop dengan loop terluar menyatakan sumbu-$$y$$ yang sedang kita jelajahi dan loop yang dalam menyatakan sumbu-$$x$$ yang sedang kita jelajahi.
 
    Ada 3 kasus saat kita sedang menjelajahi kedua sumbu, yaitu:
 
-   1. **Titik yang kita jelajahi sama dengan titik ($X,Y$)** maka outputkan `#`
+   1. **Titik yang kita jelajahi sama dengan titik ($$X,Y$$)** maka outputkan `#`
    2. **Titik yang kita jelajahi merupakan bagian dari sumbu-$$X$$ atau sumbu-$$Y$$** maka outputkan `*`
    3. **Selain kedua kasus diatas**, outputkan  (spasi)
 
