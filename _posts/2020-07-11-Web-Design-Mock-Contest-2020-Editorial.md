@@ -3,6 +3,8 @@ layout: post
 title: "WEB DESIGN MOCK CONTEST 2020 EDITORIAL"
 categories : Programming 
 tags: ["wd-contest","programming"]
+katex: yes
+published: yes
 ---
 # WEB DESIGN MOCK CONTEST 2020 EDITORIAL
 
@@ -149,7 +151,7 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu** : $$O(log M$)$$
+**Kompleksitas waktu** : $$O(log M)$$
 
 Berikut adalah contoh kode dalam bahasa C++ menggunakan `for-loop`:
 
