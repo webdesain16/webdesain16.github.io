@@ -1,3 +1,6 @@
+---
+layout: post
+---
 # test math jax
 
 you're given $N \times M$ grid. determine 
