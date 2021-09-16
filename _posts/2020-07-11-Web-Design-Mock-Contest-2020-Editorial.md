@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WEB DESIGN MOCK CONTEST 2020 EDITORIAL"
-categories : programming 
+categories : Programming 
 ---
 # WEB DESIGN MOCK CONTEST 2020 EDITORIAL
 
@@ -25,7 +25,7 @@ Klembu mengidam jagung pada tanggal ganjil, dan merasa sebal dengan penjual jagu
 
 ### Cara 1 : Menggunakan **operator modulo** (`mod, %, dll`) dan **percabangan if**
 
-Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** (mod 2 = $1$ ) atau **bilangan genap** (mod 2 = $0$).
+Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** (mod 2 = $ 1 $ ) atau **bilangan genap** (mod 2 = $ 0 $).
 
 Berikut adalah contoh kode dalam bahasa *python*:
 
@@ -102,10 +102,7 @@ int main(){
 ## B. Klembu dan Saham
 
 Soal ini dapat diselesaikan menggunakan rumus suku ke-n dari deret geometri.
-$$
-U_n=a \times {r}^{n-1}
-$$
-
+$ U_n=a \times {r}^{n-1} $
 
 Perhatikan bahwa setiap satu dollar uang milik Klembu akan menghasilkan satu dollar lainnya. Misalkan Klembu memiliki uang sebesar $1$ dollar, maka uang Klembu selanjutnya akan menjadi $1 + 1 = 2$ dollar, selanjutnya menjadi $2 + 2 = 4$ dollar, selanjutnya menjadi $4+4 = 8$ dollar, dan seterusnya.
 
