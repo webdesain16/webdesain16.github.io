@@ -1,5 +1,8 @@
 ---
 layout: post
+title: test math jax
+published: yes
+katex: yes
 ---
 # test math jax
 
