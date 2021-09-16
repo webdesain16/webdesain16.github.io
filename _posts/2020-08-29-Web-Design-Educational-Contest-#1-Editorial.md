@@ -90,13 +90,13 @@ int main(){
 
 Perhatikan bahwa kemanapun Budi berkunjung, dari koordinat negatif ke negatif, negatif ke positif, maupun positif ke positif, jarak yang ditempuh Budi akan **selalu positif**, karena jarak tidak bisa berupa nilai negatif.
 
-Soal ini tidak beda jauh dengan soal jarak manhattan, hanya saja setiap jarak yang ditempuh Budi, Budi harus mengeluarkan biaya sebesar $N$ rupiah. Maka soal ini dapat diselesaikan secara matematis :
+Soal ini tidak beda jauh dengan soal jarak manhattan, hanya saja setiap jarak yang ditempuh Budi, Budi harus mengeluarkan biaya sebesar $$N$$ rupiah. Maka soal ini dapat diselesaikan secara matematis :
 
-$$(|A-C| + |B-D|) * N$$
+$$(|A-C| + |B-D|) \times N$$
 
-Dengan $$(|A - C| + |B - D|)$$ menyatakan nilai mutlak dari $$A - C$$ ditambah dengan nilai mutlak $$B – D$$ yang menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini:
+Dengan $$(|A-C| + |B-D|)$$ menyatakan nilai mutlak dari $$A - C$$ ditambah dengan nilai mutlak $$B – D$$ yang menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
 
-* Menggunakan fungsi `abs`
+- Menggunakan fungsi `abs`
 Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
 Berikut adalah contoh program menggunakan bahasa C++:
 ```cpp
@@ -112,7 +112,7 @@ int main(){
     cout << harga << endl;
 }
 ```
-* Menggunakan **percabangan** `if`
+- Menggunakan **percabangan** `if`
 Solusi lain adalah menggunakan percabangan. Salah cara untuk merubah bilangan negatif menjadi bilangan positif adalah mengalikan bilangan tersebut dengan `-1`.
 
 Pertama kita menyimpan nilai jarak pada sumbu `x (A dan C)` pada suatu variabel, misal `hasil1`, lalu kita menyimpan nilai jarak pada sumbu `y (B dan D)` pada suatu variabel, misal `hasil2`. Lalu kita mengecek, apakah hasil1 dan hasil2 merupakan bilangan negatif, **jika negatif, maka kalikan dengan -1**.
