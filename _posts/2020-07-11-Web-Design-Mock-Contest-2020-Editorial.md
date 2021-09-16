@@ -2,9 +2,7 @@
 layout: post
 title: "WEB DESIGN MOCK CONTEST 2020 EDITORIAL"
 categories : Programming 
-tags: "wd contest"
-katex: yes
-published: yes
+tags: ["wd-contest","programming"]
 ---
 # WEB DESIGN MOCK CONTEST 2020 EDITORIAL
 
@@ -28,7 +26,7 @@ Klembu mengidam jagung pada tanggal ganjil, dan merasa sebal dengan penjual jagu
 
 ### Cara 1 : Menggunakan **operator modulo** (`mod, %, dll`) dan **percabangan if**
 
-Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** (mod 2 = $$1$$ ) atau **bilangan genap** (mod 2 = $$0$$).
+Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** ($$\mod 2 = 1$$ ) atau **bilangan genap** ($$\mod 2 = 0$$).
 
 Berikut adalah contoh kode dalam bahasa *python*:
 
@@ -98,13 +96,14 @@ int main(){
 * `s.length()` untuk menghitung panjang dari string `s`
 * Operator `or` dalam bahasa *C++* dinyatakan dengan `||`
 
-**Kompleksitas waktu :** $O(1)$
+**Kompleksitas waktu :** $$O(1)$$
 
 ---
 
 ## B. Klembu dan Saham
 
 Soal ini dapat diselesaikan menggunakan rumus suku ke-n dari deret geometri.
+
 $$U_n=a \times {r}^{n-1}$$
 
 Perhatikan bahwa setiap satu dollar uang milik Klembu akan menghasilkan satu dollar lainnya. Misalkan Klembu memiliki uang sebesar $$1$$ dollar, maka uang Klembu selanjutnya akan menjadi $$1 + 1 = 2$$ dollar, selanjutnya menjadi $$2 + 2 = 4$$ dollar, selanjutnya menjadi $$4+4 = 8$$ dollar, dan seterusnya.
@@ -151,7 +150,7 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu** : $$O(log N)$$
+**Kompleksitas waktu** : $$O(log M$)$$
 
 Berikut adalah contoh kode dalam bahasa C++ menggunakan `for-loop`:
 
@@ -191,16 +190,16 @@ Asumsikan bahwa kita sedang berada di sebuah petak, maka hanya ada satu cara dar
 
 Angka yang berwarna kuning merupakan indeks dari masing masing petak.
 
-Perhatikan baris pertama dari petak tersebut. Jika kita ingin pergi ke sembarang petak pada baris pertama, sebut saja ($$1,k$$) dengan $$1 < k \e m$$, maka hanya ada satu cara untuk pergike petak ($$1,k$$) dari petak ($$1,1$$). Hal yang sama juga terjadi jika kita ingin pergi ke sembarang petak pada kolom pertama, maka hanya ada satu cara untuk pergi ke petak ($$1,k$$) dengan $$1 < k ≤ n$$ dari petak ($$1,1$$) seperti yang ditunjukkan pada gambar :
+Perhatikan baris pertama dari petak tersebut. Jika kita ingin pergi ke sembarang petak pada baris pertama, sebut saja ($$1,k$$) dengan $$1 < k \le m$$, maka hanya ada satu cara untuk pergike petak ($$1,k$$) dari petak ($$1,1$$). Hal yang sama juga terjadi jika kita ingin pergi ke sembarang petak pada kolom pertama, maka hanya ada satu cara untuk pergi ke petak ($$1,k$$) dengan $$1 < k \le n$$ dari petak ($$1,1$$) seperti yang ditunjukkan pada gambar :
 
 <div align="center">
     <img src="https://i.imgur.com/3jNXDyw.png" alt="maze2"/>
 </div>
 
 
-Perhatikan bahwa untuk setiap petak ($x,y$), ada dua jalan untuk menujunya, yaitu dari petak kirinya ($x,y-1$) atau dari petak atasnya ($x-1,y$). Karena hanya bisa bergerak ke kanan atau bawah, maka dari petak ($x,y-1$) kita tidak bisa bergerak ke petak ($x-1,y$) begitu pula sebaliknya sehingga kedua kasus tersebut saling lepas.
+Perhatikan bahwa untuk setiap petak ($$x,y$$), ada dua jalan untuk menujunya, yaitu dari petak kirinya ($$x,y-1$$) atau dari petak atasnya ($$x-1,y$$). Karena hanya bisa bergerak ke kanan atau bawah, maka dari petak ($$x,y-1$$) kita tidak bisa bergerak ke petak ($$x-1,y$$) begitu pula sebaliknya sehingga kedua kasus tersebut saling lepas.
 
-Misalkan array dua dimensi $path[x][y]$ adalah array yang menampung banyaknya cara menuju petak ($x,y$) jika awalnya kita berada pada petak ($1,1$). Maka, secara matematis penjelasan pada paragraph dapat ditulis menjadi:
+Misalkan array dua dimensi $$path[x][y]$$ adalah array yang menampung banyaknya cara menuju petak ($x,y$) jika awalnya kita berada pada petak ($$1,1$$). Maka, secara matematis penjelasan pada paragraph dapat ditulis menjadi:
 $$path[x][y] = path[x][y-1] + path[x-1][y]$$
 
 Berikut adalah ilustrasi dari rumus tersebut:
@@ -209,7 +208,7 @@ Berikut adalah ilustrasi dari rumus tersebut:
     <img src="https://i.imgur.com/uAMp4Ag.png" alt="maze-final"/>
 </div>
 
-Jawaban akhirnya ada di $path[n][m]$.
+Jawaban akhirnya ada di $$path[n][m]$$.
 
 Berikut adalah contoh kode dalam bahasa *python* :
 
@@ -262,7 +261,7 @@ int main(){
 
 * Operator modulo pada setiap bahasa berbeda beda, ada yang menggunakan `%` seperti *python* dan *C++*, ada juga yang menggunakan `mod` seperti *pascal*.
 
-**Kompleksitas waktu :** $O(NM)$
+**Kompleksitas waktu :** $$O(NM)$$
 
 ---
 
@@ -280,7 +279,7 @@ Untuk mempermudah pengerjaan, mari selesaikan separuh dari pola terlebih dahulu.
     <img src="https://i.imgur.com/ygSm5bF.png" alt="ilus-diam2"/>
 </div>
 
-Perhatikan bahwa untuk $n = 4$, jumlah karakter `#` pada baris pertama $3$, lalu berkurang $1$ pada setiap barisnya dan jumlah karakter `*` pada baris ke-$i$ menunjukkan bilangan ganjil ke-$i$ pertama. Tabel dibawah ini dapat mempermudah Anda dalam memvisualisasi.
+Perhatikan bahwa untuk $$n = 4$$, jumlah karakter `#` pada baris pertama $$3$$, lalu berkurang $$1$$ pada setiap barisnya dan jumlah karakter `*` pada baris ke-$$i$$ menunjukkan bilangan ganjil ke-$$i$$ pertama. Tabel dibawah ini dapat mempermudah Anda dalam memvisualisasi.
 
 | Baris | Jumlah `#` | Jumlah `*` |
 | ----- | ---------- | ---------- |
@@ -289,7 +288,7 @@ Perhatikan bahwa untuk $n = 4$, jumlah karakter `#` pada baris pertama $3$, lalu
 | 3     | 1          | 5          |
 | 4     | 0          | 7          |
 
-Ini berarti, untuk mencetak mencetak n baris, dapat menggunakan `for` menaik dari $1$ sampai $n$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $1$ sampai $n-i$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $1$ sampai  $(2*i)-1$.
+Ini berarti, untuk mencetak mencetak n baris, dapat menggunakan `for` menaik dari $$1$$ sampai $$n$$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $$1$$ sampai $$n-i$$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $$1$$ sampai  $$(2*i)-1$$.
 
 Untuk pola yang selanjutnya, yaitu separuh terakhirnya.
 
@@ -298,7 +297,7 @@ Untuk pola yang selanjutnya, yaitu separuh terakhirnya.
 </div>
 
 
-Perhatikan bahwa untuk $n = 4$, jumlah karakter `#` pada baris pertama $1$, lalu bertambah $1$ pada setiap barisnya dan jumlah karakter `*` pada baris ke-$i$ menunjukkan bilangan ganjil ke-$n-i$ pertama. Tabel dibawah ini dapat mempermudah Anda dalam memvisualisasi.
+Perhatikan bahwa untuk $$n = 4$$, jumlah karakter `#` pada baris pertama $$1$$, lalu bertambah $$1$$ pada setiap barisnya dan jumlah karakter `*` pada baris ke-$$i$$ menunjukkan bilangan ganjil ke-$$n-i$$ pertama. Tabel dibawah ini dapat mempermudah Anda dalam memvisualisasi.
 
 | Baris | Jumlah `#` | Jumlah `*` |
 | ----- | ---------- | ---------- |
@@ -306,7 +305,7 @@ Perhatikan bahwa untuk $n = 4$, jumlah karakter `#` pada baris pertama $1$, lalu
 | 2     | 2          | 3          |
 | 3     | 1          | 1          |
 
-Ini berarti, untuk mencetak mencetak $n$ baris, dapat menggunakan `for` menurun dari $n-1$ sampai $1$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $1$ sampai $n-i$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $1$ sampai $(2 \times i)-1$.
+Ini berarti, untuk mencetak mencetak $$n$$ baris, dapat menggunakan `for` menurun dari $$n-1$$ sampai $$1$$. Pada setiap barisnya, untuk mencetak karakter `#` dapat menggunakan `for` menaik dari $$1$$ sampai $$n-i$$, untuk mencetak karakter `*` dapat menggunakan for menaik dari $$1$$ sampai $$(2 \times i)-1$$.
 
 Berikut adalah contoh kode dalam bahasa *python* :
 
@@ -352,29 +351,29 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu :** $O({N}^{2})$
+**Kompleksitas waktu :** $$O({N}^{2})$$
 
 ---
 
 ## E. Klembu dan Ratu
 
-Soal ini dapat diselesaikan dengan **melihat pola dan dengan bantuan *greedy***. Inti dari soal ini adalah meletakkan ratu sebanyak banyaknya pada papan berukuran $n \times n$. Misalkan kita meletakkan ratu pertama pada pojok kiri bawah dari papan tersebut, maka ratu selanjutnya diletakkan pada petak yang paling dekat dengan ratu pertama tetapi tidak sampai melanggar peraturan agar mendapat hasil paling maksimal dan membentuk pola.
+Soal ini dapat diselesaikan dengan **melihat pola dan dengan bantuan *greedy***. Inti dari soal ini adalah meletakkan ratu sebanyak banyaknya pada papan berukuran $$n \times n$$. Misalkan kita meletakkan ratu pertama pada pojok kiri bawah dari papan tersebut, maka ratu selanjutnya diletakkan pada petak yang paling dekat dengan ratu pertama tetapi tidak sampai melanggar peraturan agar mendapat hasil paling maksimal dan membentuk pola.
 
-Setelah pola di observasi, terbentuklah pola yang dimaksud. Ada 3 basecase di problem ini, yaitu $f(1) = 1$; $f(2) =1$; $f(3) = 2$; $f(4) = 4$. Lalu pola nya berlaku mulai $n ≥ 5$. 
+Setelah pola di observasi, terbentuklah pola yang dimaksud. Ada 3 basecase di problem ini, yaitu $$f(1) = 1$$; $$f(2) =1$$; $$f(3) = 2$$; $$f(4) = 4$$. Lalu pola nya berlaku mulai $$n ≥ 5$$. 
 
-**Jika $n$ adalah bilangan ganjil**, maka **keluarannya adalah $n$**, **jika $n$ adalah bilangan genap**, maka **keluarannya adalah $n-1$**. Bisa dilihat di papan $5 \times 5$ berikut ini:
+**Jika $$n$$ adalah bilangan ganjil**, maka **keluarannya adalah $n$**, **jika $$n$$ adalah bilangan genap**, maka **keluarannya adalah $$n-1$$**. Bisa dilihat di papan $$5 \times 5$$ berikut ini:
 
 <div align="center">
     <img src="https://i.imgur.com/fcAxMu7.jpg"/>
 </div>
 
-Pada papan $5 \times 5$, karena $5$ adalah bilangan **ganjil**, maka keluarannya adalah $n$, yaitu $5$.
+Pada papan $$5 \times 5$$, karena $$5$$ adalah bilangan **ganjil**, maka keluarannya adalah $$n$$, yaitu $$5$$.
 
 <div align="center">
     <img src="https://i.imgur.com/8vurMn4.png"/>
 </div>
 
-Pada papan $6 \times 6$, karena $6$ adalah bilangan **genap**, maka keluarannya adalah $n-1$, yaitu $5$.
+Pada papan $$6 \times 6$$, karena $$6$$ adalah bilangan **genap**, maka keluarannya adalah $$n-1$$, yaitu $$5$$.
 
 Berikut contoh kode dalam bahasa *python* :
 
@@ -412,15 +411,15 @@ return 0;
 }
 ```
 
-**Kompleksitas waktu** : $O(1)$
+**Kompleksitas waktu** : $$O(1)$$
 
 ---
 
 ## F. Klembu dan Pesan Rahasia
 
-Pesan yang diberikan Shiro kepada Klembu memiliki pola. Misalkan `string ans` adalah string yang menyimpan hasil dari pola tersebut, misalkan juga `int index=0` adalah index pada masukan dengan nilai inisialisasi $0$ dan misalkan `int dif = 1` adalah selisih index pada masukan dengan nilai inisialisasi $1$.
+Pesan yang diberikan Shiro kepada Klembu memiliki pola. Misalkan `string ans` adalah string yang menyimpan hasil dari pola tersebut, misalkan juga `int index=0` adalah index pada masukan dengan nilai inisialisasi $$0$$ dan misalkan `int dif = 1` adalah selisih index pada masukan dengan nilai inisialisasi $$1$$.
 
-Polanya adalah karakter yang diambil untuk keluaran adalah karakter yang berasal dari inputan, dipilih dengan jarak (index) yang semakin meningkat. Selama nilai index $≤$ panjang dari string masukan, tambahkan `string ans` dengan karakter ke-`index` dari string masukan. Lalu tambahkan nilai `index` dengan `dif` dan kemudian tambahkan nilai `dif` dengan $1$. Lakukan hal ini berulang kali hingga nilai index $>$ panjang dari string masukan.
+Polanya adalah karakter yang diambil untuk keluaran adalah karakter yang berasal dari inputan, dipilih dengan jarak (index) yang semakin meningkat. Selama nilai index $$\le$$ panjang dari string masukan, tambahkan `string ans` dengan karakter ke-`index` dari string masukan. Lalu tambahkan nilai `index` dengan `dif` dan kemudian tambahkan nilai `dif` dengan $$1$$. Lakukan hal ini berulang kali hingga nilai index $$>$$ panjang dari string masukan.
 
 Pada contoh masukan : `haplokozm`. Panjang string nya 9. Visualisasi ada pada tabel.
 <div align="center">
@@ -462,4 +461,4 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu:** $O(N)$
+**Kompleksitas waktu:** $$O(N)$$
