@@ -6,6 +6,7 @@ layout: post
 you're given $N \times M$ grid. determine 
 $$\lim_{x \to \infty} \sin(\pi)$$
 
+\\(\LaTeX{}\\)
 $ a * b = c ^ b $
 
 $ 2^{\frac{n-1}{3}} $
