@@ -103,5 +103,6 @@ int main(){
 
 **Kompleksitas waktu** : $$O(N \sqrt{N})$$
 
-### Challenge : dapatkah kalian mengerjakan soal ini dalam $$O(N \log N)$$?
+#### Challenge 
+dapatkah kalian mengerjakan soal ini dalam $$O(N \log N)$$?
 ---
