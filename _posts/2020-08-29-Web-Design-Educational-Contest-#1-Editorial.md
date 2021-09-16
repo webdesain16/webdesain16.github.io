@@ -94,7 +94,7 @@ Soal ini tidak beda jauh dengan soal jarak manhattan, hanya saja setiap jarak ya
 
 $$(|A-C| + |B-D|) * N$$
 
-Dengan $$|A - C| + |B - D|$$ menyatakan nilai mutlak dari $$A - C$$ ditambah dengan nilai mutlak $$B – D$$ yang menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini:
+Dengan $$(|A - C| + |B - D|)$$ menyatakan nilai mutlak dari $$A - C$$ ditambah dengan nilai mutlak $$B – D$$ yang menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini:
 
 * Menggunakan fungsi `abs`
 Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
@@ -191,7 +191,7 @@ kata tersebut mempunyai indeks dari $$1$$ sampai $$5$$. Seperti pada tabel di ba
 | --|---| --| --| --|
 | p | a | n | c | a |
 
-Maksud dari soal ini adalah mengeluarkan kata ``“panca”`` namun dengan karakter indeks ke total, diubah menjadi karakter uppercase (kapital). **Anggap variabel `total` adalah total dari kode – kode rahasia Klembu yang sudah di modulo $5$**.
+Maksud dari soal ini adalah mengeluarkan kata ``“panca”`` namun dengan karakter indeks ke total, diubah menjadi karakter uppercase (kapital). **Anggap variabel `total` adalah total dari kode – kode rahasia Klembu yang sudah di modulo $$5$$**.
 
 * Note : modulo adalah hasil sisa dari operasi pembagian
 
