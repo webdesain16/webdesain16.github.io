@@ -6,7 +6,7 @@ tags: ["wd-contest","programming"]
 katex: yes
 published: yes
 ---
-$
+
 ### Penulis Soal
 
 
@@ -103,4 +103,5 @@ int main(){
 
 **Kompleksitas waktu** : $$O(N \sqrt{N})$$
 
+**Challenge** : dapatkah kalian mengerjakan soal ini dalam $$O(N \log N)$$?
 ---
