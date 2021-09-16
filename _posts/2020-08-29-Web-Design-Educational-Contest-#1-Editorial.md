@@ -92,9 +92,9 @@ Perhatikan bahwa kemanapun Budi berkunjung, dari koordinat negatif ke negatif, n
 
 Soal ini tidak beda jauh dengan soal jarak manhattan, hanya saja setiap jarak yang ditempuh Budi, Budi harus mengeluarkan biaya sebesar $$N$$ rupiah. Maka soal ini dapat diselesaikan secara matematis :
 
-$$(|A-C| + |B-D|) \times N$$
+$$(\left\lvert A-C\right\rvert + \left\lvert B-D\right\rvert) \times N$$
 
-Dengan $$(|A-C|)$$ menyatakan nilai mutlak dari $$A - C$$ dan $$(|B-D|)$$ menyatakan nilai mutlak $$B – D$$. Jika keduanya ditambah, menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
+Dengan $$(\left\lvert A-C\right\rvert)$$ menyatakan nilai mutlak dari $$A - C$$ dan $$(\left\lvert B-D\right\rvert)$$ menyatakan nilai mutlak $$B – D$$. Jika keduanya ditambah, menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
 
 - Menggunakan fungsi `abs`
 Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
