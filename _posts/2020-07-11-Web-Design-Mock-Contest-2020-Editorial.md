@@ -2,6 +2,9 @@
 layout: post
 title: "WEB DESIGN MOCK CONTEST 2020 EDITORIAL"
 categories : Programming 
+tags: "wd contest"
+katex: yes
+published: yes
 ---
 # WEB DESIGN MOCK CONTEST 2020 EDITORIAL
 
@@ -25,7 +28,7 @@ Klembu mengidam jagung pada tanggal ganjil, dan merasa sebal dengan penjual jagu
 
 ### Cara 1 : Menggunakan **operator modulo** (`mod, %, dll`) dan **percabangan if**
 
-Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** (mod 2 = $ 1 $ ) atau **bilangan genap** (mod 2 = $ 0 $).
+Perhatikan bahwa **bilangan ganjil** adalah bilangan yang jika dibagi dua menghasilkan **sisa 1**, sedangkan **bilangan genap** adalah bilangan yang jika dibagi dua menghasilkan **sisa  0**. Gunakan operator modulo dan percabangan untuk mengecek **bilangan ganjil** (mod 2 = $$1$$ ) atau **bilangan genap** (mod 2 = $$0$$).
 
 Berikut adalah contoh kode dalam bahasa *python*:
 
@@ -102,11 +105,11 @@ int main(){
 ## B. Klembu dan Saham
 
 Soal ini dapat diselesaikan menggunakan rumus suku ke-n dari deret geometri.
-$ U_n=a \times {r}^{n-1} $
+$$U_n=a \times {r}^{n-1}$$
 
-Perhatikan bahwa setiap satu dollar uang milik Klembu akan menghasilkan satu dollar lainnya. Misalkan Klembu memiliki uang sebesar $1$ dollar, maka uang Klembu selanjutnya akan menjadi $1 + 1 = 2$ dollar, selanjutnya menjadi $2 + 2 = 4$ dollar, selanjutnya menjadi $4+4 = 8$ dollar, dan seterusnya.
+Perhatikan bahwa setiap satu dollar uang milik Klembu akan menghasilkan satu dollar lainnya. Misalkan Klembu memiliki uang sebesar $$1$$ dollar, maka uang Klembu selanjutnya akan menjadi $$1 + 1 = 2$$ dollar, selanjutnya menjadi $$2 + 2 = 4$$ dollar, selanjutnya menjadi $$4+4 = 8$$ dollar, dan seterusnya.
 
-Ini berarti jika Klembu memiliki $N$ dollar, maka di hari berikutnya ia akan memiliki $2N$ dollar. Maka **rasio dari deret ini adalah $2$**, dengan suku pertama adalah $N$ dan banyaknya suku dari deret ini adalah $M$, sehingga penyelesaian dari soal ini adalah
+Ini berarti jika Klembu memiliki $$N$$ dollar, maka di hari berikutnya ia akan memiliki $$2N$$ dollar. Maka **rasio dari deret ini adalah $$2$$**, dengan suku pertama adalah $$N$$ dan banyaknya suku dari deret ini adalah $$M$$, sehingga penyelesaian dari soal ini adalah
 
 $$U_M=N \times {r}^{M-1}$$
 
@@ -120,7 +123,7 @@ total = n * (rasio ** (m-1)) % MOD
 print(total)
 ```
 
-**Kompleksitas waktu**: $O(1)$
+**Kompleksitas waktu**: $$O(1)$$
 
 Berikut adalah contoh kode dalam bahasa C++ menggunakan *fast exponential* :
 
@@ -148,7 +151,7 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu** : $O(log N)$
+**Kompleksitas waktu** : $$O(log N)$$
 
 Berikut adalah contoh kode dalam bahasa C++ menggunakan `for-loop`:
 
@@ -169,7 +172,7 @@ int main(){
 }
 ```
 
-**Kompleksitas waktu** : $O(M)$
+**Kompleksitas waktu** : $$O(M)$$
 
 #### Catatan:
 
@@ -180,7 +183,7 @@ int main(){
 
 ## C. Klembu dan Maze
 
-Asumsikan bahwa kita sedang berada di sebuah petak, maka hanya ada satu cara dari luar petak menuju petak ($1,1$) seperti yang ditunjukkan pada gambar : 
+Asumsikan bahwa kita sedang berada di sebuah petak, maka hanya ada satu cara dari luar petak menuju petak ($$1,1$$) seperti yang ditunjukkan pada gambar : 
 
 <div align="center">
     <img src="https://i.imgur.com/tnKte86.png" alt="maze1"/>
@@ -188,7 +191,7 @@ Asumsikan bahwa kita sedang berada di sebuah petak, maka hanya ada satu cara dar
 
 Angka yang berwarna kuning merupakan indeks dari masing masing petak.
 
-Perhatikan baris pertama dari petak tersebut. Jika kita ingin pergi ke sembarang petak pada baris pertama, sebut saja ($1,k$) dengan $1 < k ≤ m$, maka hanya ada satu cara untuk pergike petak ($1,k$) dari petak ($1,1$). Hal yang sama juga terjadi jika kita ingin pergi ke sembarang petak pada kolom pertama, maka hanya ada satu cara untuk pergi ke petak ($1,k$) dengan $1 < k ≤ n$ dari petak ($1,1$) seperti yang ditunjukkan pada gambar :
+Perhatikan baris pertama dari petak tersebut. Jika kita ingin pergi ke sembarang petak pada baris pertama, sebut saja ($$1,k$$) dengan $$1 < k \e m$$, maka hanya ada satu cara untuk pergike petak ($$1,k$$) dari petak ($$1,1$$). Hal yang sama juga terjadi jika kita ingin pergi ke sembarang petak pada kolom pertama, maka hanya ada satu cara untuk pergi ke petak ($$1,k$$) dengan $$1 < k ≤ n$$ dari petak ($$1,1$$) seperti yang ditunjukkan pada gambar :
 
 <div align="center">
     <img src="https://i.imgur.com/3jNXDyw.png" alt="maze2"/>
