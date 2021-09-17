@@ -85,9 +85,9 @@ $$
 8^{2} = 64\\
 8^{3} = 512\\
 8^{4} = 4096\\
-8^{5} = 32768
+8^{5} = 32768\\
 $$
-Perhatikan bahwa angka satuan dari pola tersebut adalah 8,4,2,6,8,… . Pola ini berulang sebanyak 4 kali. Maka kita hanya perlu mencari modulo 4 dari . Ada 4 kasus :
+Perhatikan bahwa angka satuan dari pola tersebut adalah 8,4,2,6,8,… . Pola ini berulang sebanyak 4 kali. Maka kita hanya perlu mencari modulo 4 dari pola tersebut. Ada 4 kasus :
 1. $$N \mod 4 = 0$$, maka keluarkan $$6$$
 2. $$N \mod 4 = 1$$, maka keluarkan $$8$$
 3. $$N \mod 4 = 2$$, maka keluarkan $$4$$
@@ -130,7 +130,7 @@ int main(){
 
 ## 2E. Bilangan yang Hilang
 
-Untuk mengetahui sebuah bilangan yang hilang dari sebuah deret $$1$$ sampai $$n$$ terurut secara menaik, kita bisa menjumlahkan : $1 + 2 + 3 + 4 + … + n$ lalu dikurangi dengan jumlah bilangan yang tidak hilang. Misal contoh input :
+Untuk mengetahui sebuah bilangan yang hilang dari sebuah deret $$1$$ sampai $$n$$ terurut secara menaik, kita bisa menjumlahkan : $$1 + 2 + 3 + 4 + … + n$$ lalu dikurangi dengan jumlah bilangan yang tidak hilang. Misal contoh input :
 
 ```
 4
@@ -139,8 +139,8 @@ Untuk mengetahui sebuah bilangan yang hilang dari sebuah deret $$1$$ sampai $$n$
 
 Penyelesaian :
 
-Jumlah deret $$1$$ sampai $$n$$ : $1 + 2 + 3 + 4 = 10$
-Jumlah bilangan yang tidak hilang : $1 + 2 + 4 = 7$
+Jumlah deret $$1$$ sampai $$n$$ : $$1 + 2 + 3 + 4 = 10$$
+Jumlah bilangan yang tidak hilang : $$1 + 2 + 4 = 7$$
 
 Maka bilangan yang menghilang adalah  $$10 - 7  = 3$$
 Berikut solusi dalam bahasa C++ :
@@ -231,7 +231,7 @@ int main(){
 
 ## 1D. Bilangan yang Adil
 
-Mari kita sebut sebuah nomor `super-fair` jika habis dibagi oleh masing-masing nomor $$1 \dots 9$$. Dapat dikatakan bahwa bilangan `super-fair` juga dapat dibagi oleh $$KPK(1 \dots 9)$$ yaitu sama dengan $$2520$$. Jawabannya tidak lebih besar dari bilangan `super-fair` terdekat, yang artinya Anda dapat menambah nilai dari $n$ oleh satu sampai menjadi `fair-numbers`. Kita dapat menentukan apakah nomor tersebut adil dengan memeriksa setiap digitnya secara terpisah.
+Mari kita sebut sebuah nomor `super-fair` jika habis dibagi oleh masing-masing nomor $$1 \dots 9$$. Dapat dikatakan bahwa bilangan `super-fair` juga dapat dibagi oleh $$KPK(1 \dots 9)$$ yaitu sama dengan $$2520$$. Jawabannya tidak lebih besar dari bilangan `super-fair` terdekat, yang artinya Anda dapat menambah nilai dari $$n$$ oleh satu sampai menjadi `fair-numbers`. Kita dapat menentukan apakah nomor tersebut adil dengan memeriksa setiap digitnya secara terpisah.
 
 Berikut adalah contoh kode dalam bahasa C++:
 
@@ -244,7 +244,7 @@ bool check(long long a){
     while(tmp>0){
         long long res=tmp%10;
         tmp/=10;
-        if((res>0)$$(a%res!=0)){
+        if((res>0)&&(a%res!=0)){
             return false;
         }
     }
@@ -274,14 +274,14 @@ int main(){
 
 Karena kita akan mencari tahu kemungkinan roti yang terkontaminasi coklat, maka kita harus mengecek bagian atas, bawah, kiri, dan kanan roti yang mengandung coklat.
 
-Dengan $$i$$ adalah baris ke dan $j$ adalah kolom ke :
+Dengan $$i$$ adalah baris ke dan $$j$$ adalah kolom ke :
 1. $$(i-1, j)$$ adalah arah ke atas
 2. $$(i, +1j)$$ adalah arah ke kanan
 3. $$(i+1, j)$$ adalah arah ke bawah
 4. $$(i, j-1)$$ adalah arah ke kiri
 
 Kita sediakan array untuk menampung nilai – nilai arah tersebut.
-$$dx[] = \{-1,0,1,0\}\\dy[] = \{0,1,0,-1\}$$
+$$\\dx[] = \{-1,0,1,0\}\\dy[] = \{0,1,0,-1\}$$
 
 Lalu, saat kita iterasikan $$m$$ kali dan menginputkan koordinatnya, kita dapat mengiterasikan lagi setiap kali input koordinat $$a$$ dan $$b$$, pindah ke array atas, kanan, bawah, dan kiri nya dan selama dia masih ada di dalam jangkauan alias tidak keluar dari roti tersebut ``(x>=1 && x<=n && y>=1 && y<=2)`` maka kontaminasikan.
 
