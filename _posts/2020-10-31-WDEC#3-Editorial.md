@@ -58,7 +58,7 @@ Untuk mencari tahu hari apa setelah $$N$$ hari adalah kita pertama mencari indek
 | Sabtu | 5 |
 | Minggu | 6 |
 
-Untuk mencari hari apa setelah $&N&$ hari, kita dapat mencarinya dengan $$N \mod 7$$. Dan untuk mencatat pada apa hari ini, kita dapat menambahkan indeks nya. Jadi jawabannya ada di  `Hari[((n%7) + (index % 7)) % 7]`
+Untuk mencari hari apa setelah $$N$$ hari, kita dapat mencarinya dengan $$N \mod 7$$. Dan untuk mencatat pada apa hari ini, kita dapat menambahkan indeks nya. Jadi jawabannya ada di  `Hari[((n%7) + (index % 7)) % 7]`
 
 Berikut solusi dalam bahasa C++:
 
@@ -285,4 +285,4 @@ int main(){
 
 Algoritma pengurutan diatas adalah *Bubble Sort*. Anda bisa mempelajari lebih lanjut [disini.](https://www.geeksforgeeks.org/bubble-sort/)
 
-**Kompleksitas waktu** : $$O({N}^{2})$ atau $O(N \log{N})$$
+**Kompleksitas waktu** : $$O({N}^{2}) atau O(N \log{N})$$
