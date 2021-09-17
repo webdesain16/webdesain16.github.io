@@ -85,7 +85,7 @@ $$
 8^{2} = 64\\
 8^{3} = 512\\
 8^{4} = 4096\\
-8^{5} = 32768\\
+8^{5} = 32768\\\\
 $$
 Perhatikan bahwa angka satuan dari pola tersebut adalah 8,4,2,6,8,… . Pola ini berulang sebanyak 4 kali. Maka kita hanya perlu mencari modulo 4 dari pola tersebut. Ada 4 kasus :
 1. $$N \mod 4 = 0$$, maka keluarkan $$6$$
@@ -93,7 +93,7 @@ Perhatikan bahwa angka satuan dari pola tersebut adalah 8,4,2,6,8,… . Pola ini
 3. $$N \mod 4 = 2$$, maka keluarkan $$4$$
 4. $$N \mod 4 = 3$$, maka keluarkan $$2$$
 
-Perhatikan pula ketika $$N$$ = $$0$$, maka $$8^{0}=1$$. Sehingga ketika $$N=0$$, kita hanya perlu mengeluarkan $$1$$. 
+Perhatikan pula ketika $$N$$ = $$0$$, maka $$8^{0}=1$$. Sehingga ketika $$N=0$$, kita hanya perlu mengeluarkan $$1$$
 
 **Fun Fact** : Yang menyiapkan soal lupa masukin tc ini.
  
@@ -139,7 +139,7 @@ Untuk mengetahui sebuah bilangan yang hilang dari sebuah deret $$1$$ sampai $$n$
 
 Penyelesaian :
 
-Jumlah deret $$1$$ sampai $$n$$ : $$1 + 2 + 3 + 4 = 10$$
+Jumlah deret $$1$$ sampai $$n$$ : $$1 + 2 + 3 + 4 = 10\\$$
 Jumlah bilangan yang tidak hilang : $$1 + 2 + 4 = 7$$
 
 Maka bilangan yang menghilang adalah  $$10 - 7  = 3$$
@@ -169,7 +169,7 @@ int main(){
 
 ## 2F. Bilangan Urut
 
-Sebuah $$T\ Sequence$$ adalah di mana angka ke – $$i$$ tidak lebih besar dari angka ke – $$i + 1$$. Untuk menyelesaikan ini kita bisa menggunakan sebuah variabel penampung dan diinisiasi dengan nilai negatif. Nanti nya, variabel penampung ini berfungsi untuk menampung setiap angka yang diinputkan. Lalu jika variabel penampung itu lebih besar dari angka yang diinputkan, maka hentikan `loop` nya. Hasil yang kita keluarkan terakhir adalah variabel penampung tersebut.
+Sebuah $$T\ Sequence$$ adalah di mana angka ke – $$i$$ tidak lebih besar dari angka ke – $$i + 1$$. Untuk menyelesaikan ini kita bisa menggunakan sebuah variabel penampung dan diinisiasi dengan nilai negatif. Nanti nya, variabel penampung ini berfungsi untuk menampung setiap angka yang diinputkan. Lalu jika variabel penampung itu lebih besar dari angka yang diinputkan, maka hentikan *loop* nya. Hasil yang kita keluarkan terakhir adalah variabel penampung tersebut.
 
 **Fun Fact** : Soal ini telah mengalami revisi sebanyak 6 kali.
 
