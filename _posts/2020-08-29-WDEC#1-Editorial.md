@@ -5,27 +5,33 @@ categories : Programming
 tags: ["wd-contest","programming"]
 katex: yes
 published: yes
+
 ---
+
 ### Penulis Soal
 
-| Judul Soal                  | Author | Editorialis    |
-| --------------------------- | ------ | -------------- |
-| B. Ketuhanan yang Maha Esa  | QWludW4g | QWludW4g          |
-| C. Kemanusiaan yang Adil dan Beradab          | QWludW4g  | QWludW4g          |
-| D. Persatuan Indonesia         | Elrond  | Elrond + QWludW4g          |
-| E. Sila Keempat      | Elrond | Elrond |
-| F. Keadilan Sosial | Elrond  | Elrond |
-| G. Penyimpangan Pancasila | Kenanya | Elrond
+| Judul Soal                           | Author   | Editorialis       |
+| ------------------------------------ | -------- | ----------------- |
+| B. Ketuhanan yang Maha Esa           | QWludW4g | QWludW4g          |
+| C. Kemanusiaan yang Adil dan Beradab | QWludW4g | QWludW4g          |
+| D. Persatuan Indonesia               | Elrond   | Elrond + QWludW4g |
+| E. Sila Keempat                      | Elrond   | Elrond            |
+| F. Keadilan Sosial                   | Elrond   | Elrond            |
+| G. Penyimpangan Pancasila            | Kenanya  | Elrond            |
 
 ---
+
 ## B. Ketuhanan yang Maha Esa
+
 Misalkan setiap kucing mendapatkan $$B$$ buah kaleng dan total kaleng yang dimiliki Budi sebanyak $$A$$ kaleng. Maka banyaknya kaleng yang dimiliki oleh Budi adalah banyaknya kucing yang disantuni Budi, yaitu $$N$$, dikali dengan $$B$$, lalu ditambah dengan sisa kaleng yang dimiliki Budi, yaitu $$P$$. Secara matematis dapat ditulis:
 
 $$A = (B \times N) + P$$
 
 Lalu beberapa operasi sehingga diperoleh nilai dari $$B$$
 
-$$B \times N = A - P$$ $$B = \frac{A - P}{N}$$
+$$B \times N = A - P$$ 
+
+$$B = \frac{A - P}{N}$$
 
 Perhatikan bahwa setiap kucing mendapatkan jumlah yang sama. Maka jawaban dari soal ini adalah kita hanya perlu mengecek di setiap pertanyaan apakah $$A – P$$ habis dibagi oleh $$N$$. Jika $$A – P$$ habis dibagi oleh $$N$$, keluarkan ``“kamu tau dari mana?”``, jika tidak, keluarkan ``“sok tau kamu”`` tanpa tanda petik. Untuk mengecek apakah $$A – P$$ habis dibagi $$N$$, kita dapat menggunakan operator modulo dan percabangan.
 
@@ -45,6 +51,7 @@ int main(){
     return 0;
 }
 ```
+
 **Kompleksitas waktu** : $$O(Q)$$
 
 ---
@@ -82,6 +89,7 @@ int main(){
 	return 0;
 }
 ```
+
 **Kompleksitas waktu** : $$O(1)$$
 
 ---
@@ -97,8 +105,8 @@ $$(\left\lvert A-C\right\rvert + \left\lvert B-D\right\rvert) \times N$$
 Dengan $$(\left\lvert A-C\right\rvert)$$ menyatakan nilai mutlak dari $$A - C$$ dan $$(\left\lvert B-D\right\rvert)$$ menyatakan nilai mutlak $$B – D$$. Jika keduanya ditambah, menghasilkan jarak yang ditempuh Budi. Lalu Budi mengeluarkan $$jarak \times N$$ rupiah. Terdapat dua cara dalam menyelesaikan soal ini
 
 - Menggunakan fungsi `abs`
-Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
-Berikut adalah contoh program menggunakan bahasa C++:
+  Pemanggilan `abs(a)` mengembalikan nilai mutlak dari $$a$$, sebagai contoh `abs(1)` akan mengembalikan $$1$$ sedangkan `abs(-8)` akan mengembalikan $$8$$.
+  Berikut adalah contoh program menggunakan bahasa C++:
 
 ```cpp
 #include <bits\stdc++.h>
@@ -115,11 +123,12 @@ int main(){
 ```
 
 - Menggunakan **percabangan** `if`
-Solusi lain adalah menggunakan percabangan. Salah cara untuk merubah bilangan negatif menjadi bilangan positif adalah mengalikan bilangan tersebut dengan `-1`.
+  Solusi lain adalah menggunakan percabangan. Salah cara untuk merubah bilangan negatif menjadi bilangan positif adalah mengalikan bilangan tersebut dengan `-1`.
 
 Pertama kita menyimpan nilai jarak pada sumbu `x (A dan C)` pada suatu variabel, misal `hasil1`, lalu kita menyimpan nilai jarak pada sumbu `y (B dan D)` pada suatu variabel, misal `hasil2`. Lalu kita mengecek, apakah hasil1 dan hasil2 merupakan bilangan negatif, **jika negatif, maka kalikan dengan -1**.
 
 Contoh programnya dalam bahasa C++ sebagai berikut :
+
 ```cpp
 #include <bits\stdc++.h>
 using namespace std;
@@ -133,11 +142,13 @@ int main(){
     cout << n * (hasil1 + hasil2) << endl;
 }
 ```
+
 **Kompleksitas waktu** : $$O(1)$$
 
 ---
 
 ## E. Sila Keempat
+
 Perhatikan bahwa Budi menjadi ketua kelas **Jika dan hanya jika setengah dari jumlah siswa menyatakan “SETUJU”**. Jika tidak, maka anak lain menjadi ketua kelas. Kita dapat menampung jumlah suara saat ada yang menyatakan setuju. Misal kita mempunyai variabel `vote`. Kita inisiasikan nilai awal $$0$$ pada variabel `vote` ini. Lalu setiap kali ada input yang berupa “SETUJU”, maka nilai vote bertambah satu.
 
 #include <bits\stdc++.h>
@@ -189,9 +200,9 @@ int main(){
 Klembu memiliki kata ``“panca”`` dengan setiap karakter dalam
 kata tersebut mempunyai indeks dari $$1$$ sampai $$5$$. Seperti pada tabel di bawah, karakter `p` mempunyai indeks $$1$$, `a` mempunyai indeks $$2$$, `n` mempunyai indeks $$3$$, `c` mempunyai indeks $$4$$, `a` mempunyai indeks $$5$$
 
-| 1 | 2 | 3 | 4 | 5 |
-| --|---| --| --| --|
-| p | a | n | c | a |
+| 1    | 2    | 3    | 4    | 5    |
+| ---- | ---- | ---- | ---- | ---- |
+| p    | a    | n    | c    | a    |
 
 Maksud dari soal ini adalah mengeluarkan kata ``“panca”`` namun dengan karakter indeks ke total, diubah menjadi karakter uppercase (kapital). **Anggap variabel `total` adalah total dari kode – kode rahasia Klembu yang sudah di modulo $$5$$**.
 
