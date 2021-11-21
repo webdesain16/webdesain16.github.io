@@ -26,7 +26,7 @@ Tujuan dari soal ini untuk mengetahui hasil penjumlahan transpos dari matriks A 
 Misalkan matriks A adalah 
 $$
 \begin{bmatrix}
-\\a & b & c\\
+a & b & c\\
 d & e & f\\
 g & h & i\\
 \end{bmatrix}
@@ -35,7 +35,7 @@ $$
 Maka transpos dari matriks A adalah
 $$
 \begin{bmatrix}
-\\a & d & g\\
+a & d & g\\
 b & e & h\\
 c & f & i\\
 \end{bmatrix}
@@ -45,7 +45,7 @@ Sehingga hasil penjumlahannya adalah
 
 $$
 \begin{bmatrix}
-\\a & b & c\\
+a & b & c\\
 d & e & f\\
 g & h & i
 \end{bmatrix} +
