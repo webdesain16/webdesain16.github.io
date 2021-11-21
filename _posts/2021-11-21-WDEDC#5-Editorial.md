@@ -28,7 +28,7 @@ $$
 \begin{bmatrix}
 a & b & c\\
 d & e & f\\
-g & h & i
+g & h & i\\
 \end{bmatrix}
 $$
 
@@ -37,7 +37,7 @@ $$
 \begin{bmatrix}
 a & d & g\\
 b & e & h\\
-c & f & i
+c & f & i\\
 \end{bmatrix}
 $$
 
@@ -56,7 +56,7 @@ c & f & i
 \end{bmatrix} = \begin{bmatrix}
 2a & b+d & c+g\\
 d+b & 2e & f+h\\
-g+c & h+f & 2i
+g+c & h+f & 2i\\
 \end{bmatrix}
 $$
 Berikut program dalam bahasa C++ :
