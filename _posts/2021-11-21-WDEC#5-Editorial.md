@@ -24,6 +24,7 @@ published: yes
 Tujuan dari soal ini untuk mengetahui hasil penjumlahan transpos dari matriks A + matriks A
 
 Misalkan matriks A adalah 
+
 $$
 \begin{bmatrix}
 a & b & c\\
@@ -33,6 +34,7 @@ g & h & i\\
 $$
 
 Maka transpos dari matriks A adalah
+
 $$
 \begin{bmatrix}
 a & d & g\\
