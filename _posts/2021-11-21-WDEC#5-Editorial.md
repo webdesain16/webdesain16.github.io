@@ -59,6 +59,7 @@ d+b & 2e & f+h\\
 g+c & h+f & 2i\\
 \end{bmatrix}
 $$
+
 Berikut program dalam bahasa C++ :
 ```cpp
 #include <bits/stdc++.h>
