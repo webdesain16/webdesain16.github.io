@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WEB DESIGN PROGRAMMING DIVISION PROBLEMSET #1 ANNOUNCEMENT"
+title: "WEB DESIGN PROGRAMMING DIVISION PROBLEMSET #2 ANNOUNCEMENT"
 categories : ["Programming","announcement"]
 tags: ["wd-contest","Problemset","programming"]
 katex: yes
